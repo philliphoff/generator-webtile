@@ -1,0 +1,10 @@
+{
+	"name": "John Doe",
+	"allergies": "Penicillin",
+	"bloodType": "B+",
+	"emergencyContact": {
+		"name": "Jane Doe",
+		"phone": "(800) 555-1212",
+		"relationship": "Spouse"
+	}
+}

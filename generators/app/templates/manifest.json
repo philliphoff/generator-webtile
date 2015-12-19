@@ -1,0 +1,85 @@
+{
+  "manifestVersion": 1,
+  "name": "<%= name %>",
+  "description": "<%= description %>",
+  "version": 1,
+  "versionString": "1",
+  "author": "<%= author %>",
+  "organization": "<%= organization %>",
+  "contactEmail": "<%= email %>",
+  "tileIcon": {
+    "46": "icons/tileIcon.png"
+  },
+  "icons": {},
+  "refreshIntervalMinutes": <%= refreshInterval %>,
+  "resources": [
+    {
+      "url": "<URL to sample.json>",
+      "style": "Simple",
+      "content": {
+        "_1_name": "name",
+        "_1_bloodtype": "bloodType",
+        "_1_allergies": "allergies",
+        "_1_emergencycontactname": "emergencyContact.name",
+        "_1_emergencycontactrelationship": "emergencyContact.relationship",
+        "_1_emergencycontactphone": "emergencyContact.phone"
+      }
+    }
+  ],
+  "pages": [
+    {
+      "layout": "MSBand_NoScrollingText",
+      "condition": "true",
+      "textBindings": [
+        {
+          "elementId": "1",
+          "value": "Name"
+        },
+        {
+          "elementId": "2",
+          "value": "{{_1_name}}"
+        },
+        {
+          "elementId": "3",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "layout": "MSBand_NoScrollingText",
+      "condition": "true",
+      "textBindings": [
+        {
+          "elementId": "1",
+          "value": "Details"
+        },
+        {
+          "elementId": "2",
+          "value": "Blood Type: {{_1_bloodtype}}"
+        },
+        {
+          "elementId": "3",
+          "value": "Allergies: {{_1_allergies}}"
+        }
+      ]
+    },
+    {
+      "layout": "MSBand_NoScrollingText",
+      "condition": "true",
+      "textBindings": [
+        {
+          "elementId": "1",
+          "value": "Emergency Contact"
+        },
+        {
+          "elementId": "2",
+          "value": "{{_1_emergencycontactname}} ({{_1_emergencycontactrelationship}})"
+        },
+        {
+          "elementId": "3",
+          "value": "{{_1_emergencycontactphone}}"
+        }
+      ]
+    }
+  ]
+}
