@@ -2,18 +2,23 @@
   "name": "generator-webtile",
   "version": "1.0.0",
   "description": "A Yeoman generator for Web Tiles for the Microsoft Band.",
-  "homepage": "",
+  "homepage": "https://github.com/philliphoff/generator-webtile",
+  "bugs": {
+      "url": "https://github.com/philliphoff/generator-webtile/issues"
+  },
   "author": {
     "name": "Phillip Hoff",
-    "email": "phillip@orst.edu",
-    "url": ""
+    "email": "phillip@orst.edu"
   },
   "files": [
     "generators"
   ],
   "main": "generators/index.js",
   "keywords": [
-    "yeoman-generator"
+    "yeoman-generator",
+    "microsoft",
+    "band",
+    "webtile"
   ],
   "dependencies": {
     "yeoman-generator": "^0.21.1",
@@ -30,7 +35,10 @@
     "gulp-plumber": "^1.0.0",
     "gulp-nsp": "^2.1.0"
   },
-  "repository": "philliphoff/generator-webtile",
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/philliphoff/generator-webtile.git"
+  },
   "scripts": {
     "prepublish": "gulp prepublish",
     "test": "gulp"
