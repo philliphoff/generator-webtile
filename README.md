@@ -13,6 +13,14 @@ First, install [Yeoman](http://yeoman.io) and generator-webtile using [npm](http
 
 ## Use
 
+Generate a Web Tile project from an existing Web Tile (created by the [Microsoft Band Web Tile Builder](https://developer.microsoftband.com/WebTile/)):
+
+```bash
+> mkdir my-web-tile
+> cd my-web-tile
+> yo webtile <path to .webtile>
+```
+
 Generate a new Web Tile project:
 
 ```bash
